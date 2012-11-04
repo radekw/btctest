@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'bping' target in the 'bping' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
