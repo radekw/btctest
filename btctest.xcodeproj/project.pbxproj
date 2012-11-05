@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		D29FF827164725CB002819E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29FF826164725CB002819E2 /* Foundation.framework */; };
 		D29FF82A164725CB002819E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D29FF829164725CB002819E2 /* main.m */; };
-		D29FF82E164725CC002819E2 /* bping.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D29FF82D164725CC002819E2 /* bping.1 */; };
+		D29FF82E164725CC002819E2 /* btctest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D29FF82D164725CC002819E2 /* btctest.1 */; };
+		D29FF836164725E4002819E2 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29FF834164725E4002819E2 /* IOBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +20,19 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				D29FF82E164725CC002819E2 /* bping.1 in CopyFiles */,
+				D29FF82E164725CC002819E2 /* btctest.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D29FF822164725CB002819E2 /* bping */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bping; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29FF822164725CB002819E2 /* btctest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = btctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29FF826164725CB002819E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D29FF829164725CB002819E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D29FF82C164725CC002819E2 /* bping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bping-Prefix.pch"; sourceTree = "<group>"; };
-		D29FF82D164725CC002819E2 /* bping.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = bping.1; sourceTree = "<group>"; };
+		D29FF82C164725CC002819E2 /* btctest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "btctest-Prefix.pch"; sourceTree = "<group>"; };
+		D29FF82D164725CC002819E2 /* btctest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = btctest.1; sourceTree = "<group>"; };
+		D29FF834164725E4002819E2 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29FF836164725E4002819E2 /* IOBluetooth.framework in Frameworks */,
 				D29FF827164725CB002819E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +51,7 @@
 		D29FF817164725CB002819E2 = {
 			isa = PBXGroup;
 			children = (
-				D29FF828164725CB002819E2 /* bping */,
+				D29FF828164725CB002819E2 /* btctest */,
 				D29FF825164725CB002819E2 /* Frameworks */,
 				D29FF823164725CB002819E2 /* Products */,
 			);
@@ -57,7 +60,7 @@
 		D29FF823164725CB002819E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D29FF822164725CB002819E2 /* bping */,
+				D29FF822164725CB002819E2 /* btctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,25 +68,27 @@
 		D29FF825164725CB002819E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D29FF834164725E4002819E2 /* IOBluetooth.framework */,
 				D29FF826164725CB002819E2 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D29FF828164725CB002819E2 /* bping */ = {
+		D29FF828164725CB002819E2 /* btctest */ = {
 			isa = PBXGroup;
 			children = (
 				D29FF829164725CB002819E2 /* main.m */,
-				D29FF82D164725CC002819E2 /* bping.1 */,
+				D29FF82D164725CC002819E2 /* btctest.1 */,
 				D29FF82B164725CC002819E2 /* Supporting Files */,
 			);
-			path = bping;
+			name = btctest;
+			path = btctest;
 			sourceTree = "<group>";
 		};
 		D29FF82B164725CC002819E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D29FF82C164725CC002819E2 /* bping-Prefix.pch */,
+				D29FF82C164725CC002819E2 /* btctest-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -91,9 +96,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D29FF821164725CB002819E2 /* bping */ = {
+		D29FF821164725CB002819E2 /* btctest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D29FF831164725CC002819E2 /* Build configuration list for PBXNativeTarget "bping" */;
+			buildConfigurationList = D29FF831164725CC002819E2 /* Build configuration list for PBXNativeTarget "btctest" */;
 			buildPhases = (
 				D29FF81E164725CB002819E2 /* Sources */,
 				D29FF81F164725CB002819E2 /* Frameworks */,
@@ -103,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = bping;
-			productName = bping;
-			productReference = D29FF822164725CB002819E2 /* bping */;
+			name = btctest;
+			productName = btctest;
+			productReference = D29FF822164725CB002819E2 /* btctest */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +122,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Radek Wierzbicki";
 			};
-			buildConfigurationList = D29FF81C164725CB002819E2 /* Build configuration list for PBXProject "bping" */;
+			buildConfigurationList = D29FF81C164725CB002819E2 /* Build configuration list for PBXProject "btctest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -129,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D29FF821164725CB002819E2 /* bping */,
+				D29FF821164725CB002819E2 /* btctest */,
 			);
 		};
 /* End PBXProject section */
@@ -203,8 +208,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "bping/bping-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "btctest/btctest-Prefix.pch";
+				PRODUCT_NAME = btctest;
 			};
 			name = Debug;
 		};
@@ -212,15 +217,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "bping/bping-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "btctest/btctest-Prefix.pch";
+				PRODUCT_NAME = btctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D29FF81C164725CB002819E2 /* Build configuration list for PBXProject "bping" */ = {
+		D29FF81C164725CB002819E2 /* Build configuration list for PBXProject "btctest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D29FF82F164725CC002819E2 /* Debug */,
@@ -229,13 +234,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D29FF831164725CC002819E2 /* Build configuration list for PBXNativeTarget "bping" */ = {
+		D29FF831164725CC002819E2 /* Build configuration list for PBXNativeTarget "btctest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D29FF832164725CC002819E2 /* Debug */,
 				D29FF833164725CC002819E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
